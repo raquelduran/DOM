@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script type="text/javascript">
+		function insertElement(){
+			var parent = document.getElementById("formulario");
+			var nuevoElemento = document.createElement("input");
+			nuevoElemento.setAttribute("type", "file");
+			parent.append(nuevoElemento);
+			parent.append(document.createElement("br"));
+		}
+		window.onload = insertElement;
+	</script>
+</head>
+<body>
+	<h2>Adjuntar tantos ficheros como desee el usuario</h2>
+	<form id="formulario" method=post action="#" enctype="multipart/form-data"> 
+	</form> 
+	<br>
+		<button onclick="insertElement()">Añadir más archivos</button><br>
+		<button name="Submit" onclick="">Subir</button>
+	
+</body>
+</html>

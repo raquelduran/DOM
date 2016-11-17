@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		function addElement() {
+			var padre = document.getElementById("lista");
+			var nuevoElemento = document.createElement("li");  
+  			padre.appendChild(nuevoElemento);
+		}
+	</script>
+</head>
+<body>
+	<h2>Añadir nuevos elementos a un html</h2>
+	<button onclick="addElement()">Añade elemento</button>
+	<ul id="lista"></ul>
+</body>
+</html>
